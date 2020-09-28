@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/1.css">
+	<title>Các tag cơ bản</title>
+</head>
+<body>
+
+	<h2 style="text-align: center ;color: green;">Phiếu đăng ký</h2>
+	
+		<form>
+			<table>
+				<tr>
+					<td>Họ và tên:</td>
+					<td><input type="text" name="lname"></td>
+				</tr>
+				<tr>
+					<td>Địa chỉ</td>
+					<td><input type="text" name="lname"></td>
+				</tr>
+				<tr>
+					<td>Điện thoại:</td>
+					<td><input type="text" name=""></td>
+				</tr>
+				<tr>
+					<td>Giới tính</td>
+					<td> <input type="radio" id="male" name="gender" value="male" checked>
+						<label for="male">Nam</label>
+					<input type="radio" id="female" name="gender" value="female">
+					<label for="female">Nữ</label></td>
+				</tr>
+				<tr>
+					<td>Nghề nghiệp:</td>
+					<td><select>
+						<option>Giáo viên</option>
+						<option>Kỹ sư</option>
+						<option>Bác sĩ</option>
+					</select></td>
+				</tr>
+				<tr>
+					<td>Chọn sản phẩm tham gia:</td>
+					<td><select size="4" multiple>
+						<option selected>Kem đánh răng</option>
+						<option>Bột giặt</option>
+						<option selected>Sữa tắm</option>
+						<option>Dầu gội đầu</option>
+					</select></td>
+				</tr>
+				<tr>
+					<td>Số người dự đoạn tham gia:</td>
+					<td><input type="text" name=""></td>
+				</tr>
+				<tr>
+					<td colspan="2" style="text-align: center;"> <input type="button" value="Submit" onClick="pr()"></td>
+				</tr>
+				<tr>
+					<td colspan="2" id="result" style="color: red; text-align: center; width: 100%;"></td>
+				</tr>
+			</table>	
+		</form>
+<script type="text/javascript">
+	function pr() {
+ 	  document.getElementById("result").innerText = "Bạn đã đăng ký thành công!!";
+}
+</script>
+
+
+
+
+<style type="text/css">
+ table {
+  border-collapse: collapse;
+  margin: 0 auto;
+  background: #00FF7F;
+  color: green;
+}
+
+table, th, td {
+  border: 1px solid black;
+}
+th, td {
+  padding: 5px;
+  text-align: left;
+}
+th{
+	
+	color: white;
+	text-align: center;
+}
+tbody tr.row-diff{
+	background: #FFFFFF
+;
+
+}
+td.diff{
+	text-align: center;
+}
+</style>
+
+</body>
+</html>
